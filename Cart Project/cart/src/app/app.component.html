@@ -1,5 +1,31 @@
 <div class="main">
-  <app-card></app-card>
+ <app-card *ngFor="let post of posts"
+ [title]="post.title"
+ [imageUrl]="post.imageUrl"
+ [username]="post.username"
+ [content]="post.content"
+ ></app-card>
+
+
+
+  <!-- <app-card
+  [title]="posts[0].title"
+  [imageUrl]="posts[0].imageUrl"
+  [username]="posts[0].username"
+  [content]="posts[0].content"
+  ></app-card>
+  <app-card
+  [title]="posts[1].title"
+  [imageUrl]="posts[1].imageUrl"
+  [username]="posts[1].username"
+  [content]="posts[1].content"
+  ></app-card>
+  <app-card
+  [title]="posts[2].title"
+  [imageUrl]="posts[2].imageUrl"
+  [username]="posts[2].username"
+  [content]="posts[2].content"
+ ></app-card> -->
 </div>
 
 
