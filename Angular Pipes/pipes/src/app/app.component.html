@@ -1,0 +1,8 @@
+<h1>Fatura</h1>
+
+<div>
+  <label>İsim</label>
+  <input type="text" (input)="onNameChange($event.target.value)">
+</div>
+
+{{name | titlecase}}
