@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {lorem} from 'faker';
+// import {lorem} from 'faker';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +8,14 @@ import {lorem} from 'faker';
 })
 export class AppComponent {
 
-  randomText = lorem.sentence();
+  // randomText = lorem.sentence();
   enteredText = '';
   can="incorrect";
 
 
   getInputValue(value: string)
   {
-    console.log(this.randomText.split(''));
+    // console.log(this.randomText.split(''));
     this.enteredText=value;
 
   }
