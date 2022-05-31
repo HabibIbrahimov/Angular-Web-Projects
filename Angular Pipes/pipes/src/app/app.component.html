@@ -1,8 +1,24 @@
-<h1>Fatura</h1>
+<div class="container">
+  <h3>Fatura</h3>
 
-<div>
-  <label>İsim</label>
-  <input type="text" (input)="onNameChange($event.target.value)">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>İsim</label>
+        <input class="form-control" type="text" (input)="onNameChange($event.target.value)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>İsim</b></label>
+      <div>
+        {{name | titlecase}}
+      </div>
+
+    </div>
+
+  </div>
+
+
 </div>
 
-{{name | titlecase}}
+
