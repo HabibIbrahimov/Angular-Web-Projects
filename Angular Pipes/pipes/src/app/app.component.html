@@ -45,6 +45,21 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Boy</label>
+        <input class="form-control"  (input)="onHeightChange($event.target.value)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Boy</b></label>
+      <div>
+        {{height | number: '1.1-4'}}
+      </div>
+    </div>
+  </div>
 </div>
 
 
