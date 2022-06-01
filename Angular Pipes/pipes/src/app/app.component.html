@@ -60,6 +60,21 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Mil</label>
+        <input class="form-control"  (input)="onMilesChange($event.target.value)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Km</b></label>
+      <div>
+        {{miles | convert}}
+      </div>
+    </div>
+  </div>
 </div>
 
 
