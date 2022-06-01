@@ -13,12 +13,23 @@
       <div>
         {{name | titlecase}}
       </div>
-
     </div>
-
   </div>
 
-
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Odeme Tarihi</label>
+        <input class="form-control" type="date" (input)="onDateChange($event.target.value)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Odeme Tarihi</b></label>
+      <div>
+        {{date | date:'MMMM d,y'}}
+      </div>
+    </div>
+  </div>
 </div>
 
 
