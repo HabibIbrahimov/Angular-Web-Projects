@@ -30,6 +30,21 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Tutar</label>
+        <input class="form-control"  (input)="onMoneyChange($event.target.value)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Tutar</b></label>
+      <div>
+        {{money | currency : 'AZN'}}
+      </div>
+    </div>
+  </div>
 </div>
 
 
