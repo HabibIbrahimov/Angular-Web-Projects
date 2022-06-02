@@ -14,7 +14,7 @@ import { PlaceholdersHomeComponent } from './placeholders-home/placeholders-home
     PlaceholdersRoutingModule
   ],
   exports:[
-    PlaceholdersHomeComponent
+    // PlaceholdersHomeComponent
   ]
 })
 export class PlaceholdersModule { }
