@@ -16,7 +16,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    PlaceholdersModule,
     TablesModule,
     AppRoutingModule,
   ],
