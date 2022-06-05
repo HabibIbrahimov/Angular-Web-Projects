@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { PlaceholdersRoutingModule } from './placeholders-routing.module';
 import { PlaceholdersHomeComponent } from './placeholders-home/placeholders-home.component';
+import { PlaceholdersComponent } from './placeholders/placeholders.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    PlaceholdersHomeComponent
+    PlaceholdersHomeComponent,
+    PlaceholdersComponent
   ],
   imports: [
     CommonModule,
-    PlaceholdersRoutingModule
+    PlaceholdersRoutingModule,
+    SharedModule
   ],
   exports:[
     // PlaceholdersHomeComponent

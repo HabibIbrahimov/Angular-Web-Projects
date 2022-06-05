@@ -8,6 +8,9 @@ const routes: Routes = [
   {path:'placeholders',loadChildren:()=> 
    import('./placeholders/placeholders.module').then(m=>m.PlaceholdersModule)
   },
+  {path:'tables',loadChildren:()=> 
+   import('./tables/tables.module').then(m=>m.TablesModule)
+  },
   {path:'',component:HomeComponent},
   {path:'**',component:NotFoundComponent}
 ];
