@@ -2,5 +2,24 @@
     Anket
 </app-divider>
 <app-table></app-table>
+<div class="ui grid">
+    <div class="four wide column">
+      <div class="ui vertical fluid tabular menu">
+        <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="active item" >
+          Bio
+        </a>
+        <a routerLink="./companies" routerLinkActive="active" class="item">
+          Companies
+        </a>
+        <a routerLink="./partners" routerLinkActive="active" class="item">
+          Partners
+        </a>
+      </div>
+    </div>
+    <div class="twelve wide stretched column">
+      <div class="ui segment">
+        <router-outlet></router-outlet>
+    </div>
+    </div>
+  </div>
 
-<router-outlet></router-outlet>
