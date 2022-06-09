@@ -1,1 +1,11 @@
-<p>cardform works!</p>
+<form [formGroup]="cardForm">
+    <app-input label="Ad Soyad" ></app-input>
+  
+  </form>
+  
+  <div>Form içeriği: {{cardForm.value | json}}</div>
+  <div>Form valid mi: {{cardForm.valid ? "evet" :"hayır"}}</div>
+  <div>Form hataları: {{ cardForm.get('name')?.errors | json}}</div>
+  
+  
+  

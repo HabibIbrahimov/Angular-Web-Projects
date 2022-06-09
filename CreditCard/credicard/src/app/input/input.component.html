@@ -1,0 +1,23 @@
+<div class="field">
+    <label class="label">{{label}}</label>
+    <div class="control">
+      <input class="input" type="text" [formControl]="control"
+      [ngClass]="{'is-danger':showErrors()}">
+    </div>
+  </div>
+    <ng-container
+    *ngIf="showErrors()
+    "
+    >
+      <div class="help is-danger" *ngIf="control.errors?.['required']">
+        *Zorunlu Alan
+      </div>
+      <div class="help is-danger" *ngIf="control.errors?.['minlength']">
+        Girdiğiniz isim
+        {{control.errors?.['minlength']?.['actualLength']}}
+        karakter içermektedir, fakat minumum
+        {{control.errors?.['minlength']?.['requiredLength']}}
+        karakter olmalıdır
+      </div>
+    </ng-container>
+  
