@@ -1,0 +1,19 @@
+img {
+    width: 300px;
+  }
+  
+  .can
+  {
+    padding: 15px 10px;
+    color: azure;
+     background-color: blueviolet;
+     border-radius: 5px;
+  }
+  
+  .maindiv
+  {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+  }
+  

@@ -22,4 +22,9 @@ export class DisplayphotoComponent implements OnInit {
     });
   }
 
+  onClick()
+  {
+    this.getImages();
+  }
+
 }
